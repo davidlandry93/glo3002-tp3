@@ -1,7 +1,7 @@
 
 function Calculatrice(chiffre) {
 
-    if (chiffre !== 'undefined') {
+    if (chiffre !== undefined) {
         this.accumulateur = chiffre;
     } else {
         this.accumulateur = 0;
