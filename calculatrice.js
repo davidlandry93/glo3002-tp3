@@ -6,9 +6,10 @@ function Calculatrice(chiffre) {
     } else {
         this.accumulateur = 0;
     }
+    this.input = 0;
 
     this.additionner = function(chiffre) {
-        this.accumulateur += chiffre;
+        this.accumulateur += this.input;
 
         return this;
     };
@@ -55,5 +56,25 @@ function Calculatrice(chiffre) {
         }
 
         return this;
+    };
+
+    this.memoire = function() {
+        this.memoire = this.accumulateur;
+
+        return this;
+    };
+
+    this.popMemoire = function() {
+        this.accumulateur = this.memoire;
+
+        return this;
+    };
+
+    this.numberKeypress = function(number) {
+        if (this.input === 0) {
+            this.input = number;
+        } else {
+            this.input = parseFloat(this.input.toString() + number.toString());
+        }
     };
 }

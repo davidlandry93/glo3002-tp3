@@ -1,11 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Calculatrice</title>
-    <meta charset="UTF-8">
+    <title>calculatrice</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-      <script src="calculatrice.js"></script>
+    <table id="calculatrice">
+      <tr>
+        <td id="memory" class="commandButton">M</td>
+        <td id="display" colspan="3"></td>
+        <td id="clear" class="commandButton">C</td>
+      </tr>
+      <tr class="calcrow">
+        <td class="numberButton">1</td>
+        <td class="numberButton">2</td>
+        <td class="numberButton">3</td>
+        <td class="commandButton">+</td>
+        <td class="commandButton">sin</td>
+      </tr>
+      <tr class="calcrow">
+        <td class="numberButton">4</td>
+        <td class="numberButton">5</td>
+        <td class="numberButton">6</td>
+        <td class="commandButton">-</td>
+        <td class="commandButton">cos</td>
+      </tr>
+      <tr class="calcrow">
+        <td class="numberButton">7</td>
+        <td class="numberButton">8</td>
+        <td class="numberButton">9</td>
+        <td class="commandButton">*</td>
+        <td class="commandButton">tan</td>
+      </tr>
+      <tr class="calcrow">
+        <td class="numberButton">0</td>
+        <td class="numberButton">.</td>
+        <td class="commandButton equals">=</td>
+        <td class="commandButton">/</td>
+        <td class="commandButton">!</td>
+      </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="calculatrice.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

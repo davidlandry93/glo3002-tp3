@@ -1,0 +1,32 @@
+
+body {
+    font-size: 1.6em;
+}
+
+td {
+    width: 100px;
+}
+
+#display {
+    text-align: right;
+    animation: fade-in-out 2s infinite;
+    animation-play-state: paused;
+}
+
+@keyframes fade-in-out {
+    0% {opacity: 1; }
+    50% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.numberButton {
+    background-color: #FFCC00;
+}
+
+.commandButton {
+    background-color: #ECECEC;
+}
+
+.equals {
+    background-color: #FF6300;
+}
